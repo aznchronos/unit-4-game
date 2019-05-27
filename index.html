@@ -5,27 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Crystals Collector</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/reset.css"
+    <!-- <link rel="stylesheet" href="assets/css/reset.css" -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
-    <div>Crystals Collector!</div>
-    <div>
-        <p>You will be given a random number at the start of the game.</p>
-        <br>
-        <p>There are four crystals below. By Clicking on a crystal, you will add a specific amount of points to your total score.</p>
-        <br>
-        <p>The value of each crystal is hidden from you until you click on it.</p>
-        <br>
-        <p>Each time when the game starts, the values of each crystal will change</p>
+    <div class="jumbotron text-center text-light bg-danger h1">Crystals Collector!
     </div>
-    <div>0</div>
-    <div>
-        <p>Wins: 0</p>
-        <p>Losses: 0</p>
+    <div class="row">
+        <div class="col-md-6 ml-4 m-2 instructions">
+            <p>You will be given a random number at the start of the game.</p>
+            <br>
+            <p>There are four crystals below. By Clicking on a crystal, you will add a specific amount of points to your total score.</p>
+            <br>
+            <p>The value of each crystal is hidden from you until you click on it.</p>
+            <br>
+            <p>Each time when the game starts, the values of each crystal will change</p>
+        </div>
     </div>
-    <div>Your total score is:</div>
-    <div>0</div>
+    <div class="row">
+        <div class="col-md-3 ml-4 m-2 target scoreSize">0</div>
+        <div class="col-md-2 ml-4 m-2 scoreboard">
+            <p id="wins">Wins: 0</p>
+            <p id="losses">Losses: 0</p>
+        </div>
+    </div>
+
+    <div class="card-body">
+    </div>
+    
+    <div class="row">
+        <div class="col-md-3 ml-4 m-2 currentTotal">Your total score is:</div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-md-3 ml-4 m-2 currentTotal scoreSize">0</div>
+    </div>
     <script>
     </script>
 </body>
