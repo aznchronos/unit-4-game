@@ -3,7 +3,6 @@ var losses = 0;
 // result is the total score added together
 var result = 0;
 var target;
-var random;
 var started = false;
 var card1;
 var card2;
@@ -45,12 +44,12 @@ function startGame(){
 
     //randomly generates a number at start of game
     //Number 120 since 1-6 can easily be used to go into it
-    random = Math.floor(Math.random() * 121);
+    target = Math.floor(Math.random() * 121);
     //set condition that the number will always be over 20
-    while (random < 19){
-        random = Math.floor(Math.random() * 121);
+    while (target < 19){
+        target = Math.floor(Math.random() * 121);
     }
-    $("#target-num").text(random);
+    $("#target-num").text(target);
 
     // Prevents cards from having the same number
     while (
