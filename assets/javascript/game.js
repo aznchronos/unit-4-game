@@ -44,10 +44,10 @@ function startGame(){
 
     //randomly generates a number at start of game
     //Number 120 since 1-6 can easily be used to go into it
-    target = Math.floor(Math.random() * 121);
+    target = Math.round(Math.random() * 121);
     //set condition that the number will always be over 20
-    while (target < 19){
-        target = Math.floor(Math.random() * 121);
+    while (target < 19) {
+        target = Math.round(Math.random() * 121);
     }
     $("#target-num").text(target);
 
@@ -60,28 +60,26 @@ function startGame(){
         card2 === card4 ||
         card3 === card4
     ) {
-        card1 = Math.floor(Math.random() * 10) + 1;
-        card2 = Math.floor(Math.random() * 10) + 1;
-        card3 = Math.floor(Math.random() * 10) + 1;
-        card4 = Math.floor(Math.random() * 10) + 1;
+        card1 = Math.floor(Math.random() * 15) + 1;
+        card2 = Math.floor(Math.random() * 15) + 1;
+        card3 = Math.floor(Math.random() * 15) + 1;
+        card4 = Math.floor(Math.random() * 15) + 1;
     }
-
     //starting a game resets the target total back to zero
-    target = 0;
-    $("#target-num").text(target);
+    result = 0;
 };
 
 //Sets win/loss condition so that you have to have the same numbers to win
 function setWinLose() {
-    if (target === result){
+    if (result === target){
         wins++;
-        $("#win-num").text(wins);
+        $("#win-num").text("Wins: " + wins);
         $("#win-lose-message").text("Congrats on your win!!");
         startGame();
     }
     else if (result > target) {
         losses++;
-        $("#losses-num").text(losses);
+        $("#losses-num").text("Losses: " + losses);
         $("#win-lose-message").text("Well that sucks!");
         startGame();
     };

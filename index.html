@@ -15,7 +15,7 @@
     <div class="jumbotron text-center text-light bg-danger h1">Crystals Collector!
     </div>
     <div class="row">
-        <div class="col-md-6 ml-4 mt-4 instructions">
+        <div class="col-md-6 ml-4 instructions">
             <p>You will be given a random number at the start of the game.</p>
             <br>
             <p>There are four crystals below. By Clicking on a crystal, you will add a specific amount of points to your total score.</p>
@@ -28,32 +28,32 @@
     <div class="row">
         <div class="col-md-3 ml-4 mt-4 target scoreSize" id="target-num">0</div>
         <div class="col-md-2 ml-4 mt-4 scoreboard">
-            <p id="wins">Wins: 0</p>
-            <p id="losses">Losses: 0</p>
+            <p id="wins-num">Wins: 0</p>
+            <p id="losses-num">Losses: 0</p>
         </div>
     </div>
 
-    <div class="card-body">
-        <div id="card-1">
+    <div class="row">
+        <div id="card-1" class="col-sm-1 ml-5 mt-3">
             <img id="card-1" style="width: 130px; height: 130px" src="assets/images/Profile_Kirby.aead314d435d8e52d9a4e92a6f799c4eee08081e.jpg">
         </div>
-        <div id="card-2">
+        <div id="card-2" class="col-sm-1 ml-5 mt-3">
             <img id="card-2" style="width: 130px; height: 130px" src="assets/images/main.png">
         </div>
-        <div id="card-3">
+        <div id="card-3" class="col-sm-1 ml-5 mt-3">
             <img id="card-3" style="width: 130px; height: 130px" src="assets/images/mario-pose2.png">
         </div>
-        <div id="card-4">
+        <div id="card-4" class="col-sm-1 ml-5 mt-3">
             <img id="card-4" style="width: 130px; height: 130px" src="assets/images/pacman_icon_2.jpg">
         </div>
     </div>
     
     <div class="row">
-        <div class="col-md-3 ml-4 mt-4 currentTotal">Your total score is:</div>
+        <div class="col-md-3 ml-4 mt-3 py-3 currentTotal">Your total score is:</div>
     </div>
     <br>
     <div class="row">
-        <div class="col-md-3 ml-4 mt-4 currentTotal scoreSize" id="result-num">0</div>
+        <div class="col-md-3 ml-4 py-5 currentTotal scoreSize" id="result-num">0</div>
     </div>
     <script src="assets/javascript/game.js"></script>
 </body>
