@@ -60,10 +60,10 @@ function startGame(){
         card2 === card4 ||
         card3 === card4
     ) {
-        card1 = Math.floor(Math.random() * 15) + 1;
-        card2 = Math.floor(Math.random() * 15) + 1;
-        card3 = Math.floor(Math.random() * 15) + 1;
-        card4 = Math.floor(Math.random() * 15) + 1;
+        card1 = Math.floor(Math.random() * 12) + 1;
+        card2 = Math.floor(Math.random() * 12) + 1;
+        card3 = Math.floor(Math.random() * 12) + 1;
+        card4 = Math.floor(Math.random() * 12) + 1;
     }
     //starting a game resets the target total back to zero
     result = 0;
