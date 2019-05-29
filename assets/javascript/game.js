@@ -43,6 +43,7 @@ $(document).ready(function(){
 
 // Starts game
 function startGame(){
+    //starts the game by setting it to true
     started = true;
 
     //randomly generates a number at start of game
