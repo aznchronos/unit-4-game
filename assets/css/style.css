@@ -2,7 +2,6 @@ body {
     background-image: url("https://images.alphacoders.com/515/515344.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    overflow: hidden;
 }
 
 .instructions {
@@ -31,4 +30,12 @@ body {
 
 .scoreSize {
     font-size: 30px;
+}
+
+.row {
+    margin: 0;
+}
+
+.container-fluid {
+    padding: 0;
 }

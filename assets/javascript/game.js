@@ -74,13 +74,13 @@ function setWinLose() {
     if (result === target){
         wins++;
         $("#win-num").text("Wins: " + wins);
-        $("#win-lose-message").text("Congrats on your win!!");
+        $("#win-lose-message").html("<h3>Congrats on your win!!</h3>");
         startGame();
     }
     else if (result > target) {
         losses++;
         $("#losses-num").text("Losses: " + losses);
-        $("#win-lose-message").text("Well that sucks!");
+        $("#win-lose-message").html("<h3>Well that sucks!</h3>");
         startGame();
     };
 };
